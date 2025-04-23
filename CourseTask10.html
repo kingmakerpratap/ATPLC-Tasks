@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Information Form</title>
+    <style>
+        body {
+            font-family: Imprint MT Shadow, sans-serif;
+            background: #d9e7e9;
+            text-align: center;
+            padding: 80px;
+        }
+
+        .form-container {
+            width: 40%;
+            margin: auto;
+            background-color: white;
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+	
+		.section {
+            width: 200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 20px 12px 10px rgba(0.2, 0.5, 0.4, 0.3);
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+		
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .reset-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .reset-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+	  <div class="container">
+        <h2 style="font-family: Magneto; color: navy;"><u>Personal Information Form</u></h2>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Education Completed:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="highschool" name="education" value="High School">
+                    <label for="highschool">High School</label>
+
+                    <input type="checkbox" id="bachelor" name="education" value="Bachelor's">
+                    <label for="bachelor">Bachelor's</label>
+
+                    <input type="checkbox" id="master" name="education" value="Master's">
+                    <label for="master">Master's</label>
+
+                    <input type="checkbox" id="phd" name="education" value="PhD">
+                    <label for="phd">PhD</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="webdev">Do You Like WebDev?</label>
+                <select id="webdev" name="webdev">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Sometimes">Sometimes</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+	  </div>
+    </div>
+
+</body>
+</html>

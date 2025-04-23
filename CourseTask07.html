@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Table</title>
+    <style>
+        body {
+            font-family: Imprint MT Shadow, sans-serif;
+            background-color: #c8d778;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 90px 50px 10px rgba(0,0.9,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #a4f2fe;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="font-family: Forte; color: #cf0000;"><u>Batchmates Academic Information</u></h2>
+
+    <table>
+        <tr style="font-family: Magneto; color: #002fd3;">
+            <th>Name</th>
+            <th>Registration No</th>
+            <th>CGPA (Till Last Semester)</th>
+            <th colspan="2">Courses Taught Last Session</th> 
+        </tr>
+        <tr>
+            <td>Amit Sharma</td>
+            <td>2023101</td>
+            <td>8.5</td>
+            <td rowspan="2">Data Structures</td> 
+            <td>Algorithms</td>
+        </tr>
+        <tr>
+            <td>Priya Verma</td>
+            <td>2023102</td>
+            <td>8.8</td>
+            <td>Machine Learning</td>
+        </tr>
+        <tr>
+            <td>Rahul Singh</td>
+            <td>2023103</td>
+            <td>8.2</td>
+            <td>Web Development</td>
+            <td rowspan="2">Cyber Security</td> 
+        </tr>
+        <tr>
+            <td>RajKumari DevSena</td>
+            <td>2023104</td>
+            <td>7.9</td>
+            <td>Artificial Intelligence</td>
+        </tr>
+		<tr>
+            <td>Bhallal Dev</td>
+            <td>2023108</td>
+            <td>6.9</td>
+            <td colspan="2">Cloud Computing</td>
+        </tr> 
+		<tr>
+            <td>Amrendra BahuBali</td>
+            <td>2023109</td>
+            <td>8.1</td>
+            <td colspan="2">Robotics</td>
+        </tr>
+    </table>
+
+</body>
+</html>
