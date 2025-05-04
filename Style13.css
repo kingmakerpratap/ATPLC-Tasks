@@ -1,0 +1,50 @@
+.info-box {
+    background: linear-gradient(45deg, #0e020b, #001354, #023130, #001041, #000404);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0.8, 0, 0.2);
+}
+.check-box {
+    background: linear-gradient(315deg, #240140, #001304, #69000d, #001041, #403e64);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0.6, 0, 0.2);
+}
+.conc-box {
+    background: linear-gradient(270deg, #414105, #10363d, #4f0f00, #001e01, #4f2e00);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0.9, 0, 0.2);
+}
+.size-box {
+    background: linear-gradient(165deg, #1e1b50, #501b4e, #501b1b, #50501b, #1b501c);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0.4, 0, 0.2);
+}
+.round-box {
+    background: linear-gradient(135deg, #643e3e, #64633e, #3e643f, #3e6463, #403e64);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
