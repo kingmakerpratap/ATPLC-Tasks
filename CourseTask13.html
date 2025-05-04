@@ -2,7 +2,64 @@
 <html>
 <head>
     <title>Print Name & Address</title>
-    <link rel="stylesheet" href="style13.css">
+	<style>
+	body {
+            font-family: FZShuTi, sans-serif;
+            background-color: #bbfcfe;
+            margin: 0;
+            padding: 0;
+        }
+    .info-box {
+    background: linear-gradient(45deg, #0e020b, #001354, #023130, #001041, #000404);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 45px 15px 45px 15px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 36px 14px 8px rgba(0, 0.8, 0, 0.2);
+	}
+	.check-box {
+    background: linear-gradient(315deg, #240140, #001304, #69000d, #001041, #403e64);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 20px 10px 20px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 20px 14px 8px rgba(0, 0.6, 0, 0.2);
+	}
+	.conc-box {
+    background: linear-gradient(270deg, #414105, #10363d, #4f0f00, #001e01, #4f2e00);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 100px 100px 100px 100px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 40px 14px 8px rgba(0, 0.9, 0, 0.2);
+	}
+	.size-box {
+    background: linear-gradient(165deg, #1e1b50, #501b4e, #501b1b, #50501b, #1b501c);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 5px 15px 5px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 15px 14px 8px rgba(0, 0.4, 0, 0.2);
+	}
+	.round-box {
+    background: linear-gradient(135deg, #643e3e, #64633e, #3e643f, #3e6463, #403e64);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 50px 10px 50px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 30px 14px 8px rgba(0, 0.8, 0, 0.2);
+	}
+	</style>
     <script>
         function checkEquality() {
             let var1 = document.getElementById("var1").value;
@@ -35,30 +92,30 @@
 </head>
 <body>
     <div class="info-box">
-        <h2>Name: Purushottam Kumar</h2>
-        <p>Address: ChakSikandar Market, Bidupur, Vaishali, BIHAR</p>
+        <h2 style="font-family: Exotc350 DmBd BT";>Name: Purushottam Kumar</h2>
+        <p style="font-family: Papyrus";>Address: ChakSikandar Market, Bidupur, Vaishali, BIHAR</p>
     </div>
-	<br>
+	<br><br>
 	<div class="check-box">
 	<input type="text" id="var1" placeholder="Enter first value">
     <input type="text" id="var2" placeholder="Enter second value">
     <button onclick="checkEquality()">Check</button>
     <p id="output"></p>
 	</div>
-	<br>
+	<br><br>
 	<div class="conc-box">
 	<input type="text" id="str1" placeholder="Enter first string">
     <input type="text" id="str2" placeholder="Enter second string">
     <button onclick="concatenateStrings()">Concatenate & Uppercase</button>
     <p id="output1"></p>
 	</div>
-	<br>
+	<br><br>
 	<div class="size-box">
 	<input type="text" id="inputString" placeholder="Enter a string">
     <button onclick="getStringSize()">Calculate Size</button>
     <p id="output2"></p>
 	</div>
-	<br>
+	<br><br>
 	<div class="round-box">
 	<input type="number" id="number" placeholder="Enter a number">
     <input type="number" id="digits" placeholder="Enter digits">
