@@ -3,52 +3,52 @@
 <head>
     <title>JavaScript Array Operations</title>
     <style>
-		body {
-    font-family: MV Boli, sans-serif;
-    background: linear-gradient(15deg, #1e1b50, #501b4e, #501b1b, #50501b, #1b501c);
-    text-align: center;
-	color: white;
-	text-decoration: underline;
-}
+		body{
+			font-family: MV Boli, sans-serif;
+			background: linear-gradient(15deg, #1e1b50, #501b4e, #501b1b, #50501b, #1b501c);
+			text-align: center;
+			color: white;
+			text-decoration: underline;
+		}
 
-h1 {
-    color: #fffe3f;
-	font-family: Exotc350 DmBd BT; 
-	text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: #d0fdfe;
-    font-size: 36px;
-}
+		h1{
+			color: #fffe3f;
+			font-family: Exotc350 DmBd BT; 
+			text-decoration: underline;
+			text-decoration-style: double;
+			text-decoration-color: #d0fdfe;
+			font-size: 36px;
+		}
 
-.box {
-    background: linear-gradient(315deg, #240140, #001304, #69000d, #001041, #403e64);
-    padding: 20px;
-    margin: 20px auto;
-    width: 40%;
-    border-radius: 40px 30px 20px 15px;
-    box-shadow: 8px 4px 12px rgba(0,0.6,0,0.2);
-}
+		.box{
+			background: linear-gradient(315deg, #240140, #001304, #69000d, #001041, #403e64);
+			padding: 20px;
+			margin: 20px auto;
+			width: 40%;
+			border-radius: 40px 30px 20px 15px;
+			box-shadow: 8px 4px 12px rgba(0,0.6,0,0.2);
+		}
 
-input {
-    padding: 8px;
-    width: 80%;
-    margin: 10px 0;
-	border-radius: 8px 30px 20px 15px;
-    box-shadow: 8px 4px 12px rgba(0,0.6,0,0.2);
-}
+		input{
+			padding: 8px;
+			width: 80%;
+			margin: 10px 0;
+			border-radius: 8px 30px 20px 15px;
+			box-shadow: 8px 4px 12px rgba(0,0.6,0,0.2);
+		}
 
-button {
-    background-color: #fffe3f;
-    color: white;
-    padding: 10px;
-    border: none;
-	border-radius: 80px 30px 20px 85px;
-    cursor: pointer;
-}
+		button{
+			background-color: #fffe3f;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 80px 30px 20px 85px;
+			cursor: pointer;
+		}
 
-button:hover {
-    background-color: #0056b3;
-}
+		button:hover{
+			background-color: #0056b3;
+		}
 	</style>
 </head>
 <body>
@@ -78,24 +78,24 @@ button:hover {
     </div>
 
     <script>
-		function sortArray() {
-    let inputValues = document.getElementById("sortArray").value.split(",").map(Number);
-    let sortedArray = inputValues.sort((a, b) => a - b);
-    document.getElementById("output1").innerText = "Sorted Array: " + sortedArray.join(", ");
-}
+		function sortArray(){
+			let inputValues = document.getElementById("sortArray").value.split(",").map(Number);
+			let sortedArray = inputValues.sort((a, b) => a - b);
+			document.getElementById("output1").innerText = "Sorted Array: " + sortedArray.join(", ");
+		}
 
-function concatArrays() {
-    let array1 = document.getElementById("array1").value.split(",").map(Number);
-    let array2 = document.getElementById("array2").value.split(",").map(Number);
-    let newArray = array1.concat(array2);
-    document.getElementById("output2").innerText = "Concatenated Array: " + newArray.join(", ");
-}
+		function concatArrays(){
+			let array1 = document.getElementById("array1").value.split(",").map(Number);
+			let array2 = document.getElementById("array2").value.split(",").map(Number);
+			let newArray = array1.concat(array2);
+			document.getElementById("output2").innerText = "Concatenated Array: " + newArray.join(", ");
+		}
 
-function removeFirstElement() {
-    let inputArray = document.getElementById("removeArray").value.split(",").map(Number);
-    inputArray.shift(); 
-    document.getElementById("output3").innerText = "Updated Array: " + inputArray.join(", ");
-}
+		function removeFirstElement(){
+			let inputArray = document.getElementById("removeArray").value.split(",").map(Number);
+			inputArray.shift(); 
+			document.getElementById("output3").innerText = "Updated Array: " + inputArray.join(", ");
+		}
 	</script>
 
 </body>

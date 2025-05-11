@@ -1,0 +1,40 @@
+body {
+    font-family: Algerian, sans-serif;
+    background-color: #E0FFFF;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.box {
+    background: linear-gradient(315deg, #F0FFF0, #FAFAD2, #AFEEEE, #D8BFD8, #E6E6FA);
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px 55px 10px 55px;
+    box-shadow: 0px 8px 20px rgba(0,0.5,0,0.8);
+}
+
+input {
+    padding: 8px;
+    width: 80%;
+    margin: 10px 0;
+	border-radius: 25px 5px 25px 5px;
+    box-shadow: 0px 14px 18px rgba(0,0.6,0,0.6);
+}
+
+button {
+    background: linear-gradient(315deg, #240140, #001304, #69000d, #001041, #403e64);
+	border-radius: 95px 55px 70px 95px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #643e3e, #64633e, #3e643f, #3e6463, #403e64);
+}

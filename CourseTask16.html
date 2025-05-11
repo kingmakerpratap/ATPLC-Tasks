@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Interactions</title>
+    <style>
+		body{
+			font-family: Algerian, sans-serif;
+			background-color: #E0FFFF;
+			text-align: center;
+		}
+
+		h1{
+			color: #007bff;
+		}
+
+		.box{
+			background: linear-gradient(315deg, #F0FFF0, #FAFAD2, #AFEEEE, #D8BFD8, #E6E6FA);
+			padding: 20px;
+			margin: 20px auto;
+			width: 50%;
+			border-radius: 10px 55px 10px 55px;
+			box-shadow: 0px 8px 20px rgba(0,0.5,0,0.8);
+		}
+
+		input{
+			padding: 8px;
+			width: 80%;
+			margin: 10px 0;
+			border-radius: 25px 5px 25px 5px;
+			box-shadow: 0px 14px 18px rgba(0,0.6,0,0.6);
+		}
+
+		button{
+			background: linear-gradient(315deg, #240140, #001304, #69000d, #001041, #403e64);
+			border-radius: 95px 55px 70px 95px;
+			box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+			color: white;
+			padding: 10px;
+			border: none;
+			cursor: pointer;
+		}
+
+		button:hover{
+			background: linear-gradient(135deg, #643e3e, #64633e, #3e643f, #3e6463, #403e64);
+		}
+			
+		.container{
+			position: relative;
+			display: inline-block;
+			width: 400px; 
+			height: auto;
+			margin-bottom: 20px;
+		}
+				
+	</style>
+</head>
+<body>
+
+    <h1 style="font-family: Papyrus;"><u>JavaScript Interactive Features</u></h1>
+
+    <div class="box">
+        <h2 style="font-family: Agency FB";>Basic Information Form</h2>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <input type="email" id="email" placeholder="Enter Your Email">
+        <input type="text" id="address" placeholder="Enter Your Address"><br>
+        <button onclick="showFormData()">Submit</button>
+        <p id="formOutput"></p>
+    </div>
+
+    <div class="box container">
+        <h2 style="font-family: FZShuTi";>Change Image</h2>
+		<img id="changeableImage" src="./KalkiPainting.jpg" alt="Image" width="200"><br>
+        <button onclick="changeImage()">Change Image</button>
+    </div>
+
+    <div class="box">
+        <h2 style="font-family: Broadway";>Adjust Font Size</h2>
+        <p id="textToResize">Size Change Kijie Na Sir Mera...🫠🙂‍↔️</p>
+        <button onclick="increaseFontSize()">Increase</button>
+        <button onclick="decreaseFontSize()">Decrease</button>
+    </div>
+
+    <div class="box container">
+        <h2 style="font-family: Chiller";>Current Date & Time</h2>
+        <p id="dateTime"></p>
+        <button onclick="showDateTime()">Show Date & Time</button>
+    </div>
+
+    <script>
+		function showFormData(){
+			let name = document.getElementById("name").value;
+			let email = document.getElementById("email").value;
+			let address = document.getElementById("address").value;
+
+			let output = `Name: ${name} <br> Email: ${email} <br> Address: ${address}`;
+			document.getElementById("formOutput").innerHTML = output;
+		}
+
+		function changeImage(){
+			let img = document.getElementById("changeableImage");
+			img.src = img.src.includes("KalkiPainting.jpg") ? "ViratSwaroop.jpg" : "KalkiPainting.jpg";
+		}
+
+		function increaseFontSize(){
+			let text = document.getElementById("textToResize");
+			let currentSize = window.getComputedStyle(text).fontSize;
+			text.style.fontSize = (parseInt(currentSize) + 2) + "px";
+		}
+
+		function decreaseFontSize(){
+			let text = document.getElementById("textToResize");
+			let currentSize = window.getComputedStyle(text).fontSize;
+			text.style.fontSize = (parseInt(currentSize) - 2) + "px";
+		}
+
+		function showDateTime(){
+			let currentDateTime = new Date().toLocaleString();
+			document.getElementById("dateTime").innerText = `Current Date & Time: ${currentDateTime}`;
+		}
+	</script>
+
+</body>
+</html>

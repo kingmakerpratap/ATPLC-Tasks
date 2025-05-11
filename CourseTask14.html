@@ -3,52 +3,50 @@
 <head>
     <title>JS Operational Fn.</title>
     <style>
-		body {
-    font-family: FZShuTi, sans-serif;
-    background: linear-gradient(45deg, #0e020b, #001354, #023130, #001041, #000404);
-    text-align: center;
-}
+		body{
+			font-family: FZShuTi, sans-serif;
+			background: linear-gradient(45deg, #0e020b, #001354, #023130, #001041, #000404);
+			text-align: center;
+		}
 
-h1 {
-    color: #007bff;
-}
+		h1{
+			color: #007bff;
+		}
 
-.box {
-    background: linear-gradient(135deg, #643e3e, #64633e, #3e643f, #3e6463, #403e64);
-    padding: 20px;
-    margin: 20px auto;
-    width: 40%;
-    border-radius: 25px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-}
+		.box{
+			background: linear-gradient(135deg, #643e3e, #64633e, #3e643f, #3e6463, #403e64);
+			padding: 20px;
+			margin: 20px auto;
+			width: 40%;
+			border-radius: 25px;
+			box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+		}
 
-input {
-    padding: 8px;
-    width: 80%;
-    margin: 10px 0;
-	border-radius: 15px 45px 15px 45px;
-}
+		input{
+			padding: 8px;
+			width: 80%;
+			margin: 10px 0;
+			border-radius: 15px 45px 15px 45px;
+		}
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 45px 15px 45px 15px;
-    cursor: pointer;
-}
+		button{
+			background-color: #007bff;
+			color: white;
+			padding: 10px;
+			border-radius: 45px 15px 45px 15px;
+			cursor: pointer;
+		}
 
-button:hover {
-    background-color: #0056b3;
-}
+		button:hover{
+			background-color: #0056b3;
+		}
 
 	</style>
 </head>
 <body>
 
-    <h1 style="font-family: Exotc350 DmBd BT; text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: #d0fdfe;
-    font-size: 36px; color: #fffe3f;">JS Function Demo</h1>
+    <h1 style="font-family: Exotc350 DmBd BT; text-decoration: underline; text-decoration-style: double;
+		text-decoration-color: #d0fdfe;	font-size: 36px; color: #fffe3f;">JS Function Demo</h1>
 
     <div class="box">
         <h2>Filter Negative Numbers</h2>
@@ -85,45 +83,45 @@ button:hover {
     </div>
 
     <script>
-		function filterNegativeNumbers() {
-    let inputValues = document.getElementById("numList").value.split(",").map(Number);
-    let filtered = inputValues.filter(num => num >= 0);
-    document.getElementById("output1").innerText = "Filtered Array: " + filtered.join(", ");
-}
+		function filterNegativeNumbers(){
+			let inputValues = document.getElementById("numList").value.split(",").map(Number);
+			let filtered = inputValues.filter(num => num >= 0);
+			document.getElementById("output1").innerText = "Filtered Array: " + filtered.join(", ");
+		}
 
-function calculateDifference() {
-    let num = parseFloat(document.getElementById("diffNum").value);
-    let diff = (num > 13) ? (Math.abs(num - 13) * 2) : (13 - num);
-    document.getElementById("output2").innerText = "Difference: " + diff;
-}
+		function calculateDifference(){
+			let num = parseFloat(document.getElementById("diffNum").value);
+			let diff = (num > 13) ? (Math.abs(num - 13) * 2) : (13 - num);
+			document.getElementById("output2").innerText = "Difference: " + diff;
+		}
 
-function generateFibonacci() {
-    let n = parseInt(document.getElementById("fibNum").value);
-    let fib = [0, 1];
+		function generateFibonacci(){
+			let n = parseInt(document.getElementById("fibNum").value);
+			let fib = [0, 1];
 
-    for (let i = 2; i < n; i++) {
-        fib.push(fib[i - 1] + fib[i - 2]);
-    }
+			for (let i = 2; i < n; i++){
+				fib.push(fib[i - 1] + fib[i - 2]);
+			}
 
-    document.getElementById("output3").innerText = "Fibonacci Series: " + fib.join(", ");
-}
+			document.getElementById("output3").innerText = "Fibonacci Series: " + fib.join(", ");
+		}
 
-function sumMultiples() {
-    let sum = 0;
-    for (let i = 1; i < 1000; i++) {
-        if (i % 3 === 0 || i % 5 === 0) {
-            sum += i;
-        }
-    }
+		function sumMultiples(){
+			let sum = 0;
+			for (let i = 1; i < 1000; i++) {
+				if (i % 3 === 0 || i % 5 === 0) {
+					sum += i;
+				}
+			}
 
-    document.getElementById("output4").innerText = "Sum: " + sum;
-}
+			document.getElementById("output4").innerText = "Sum: " + sum;
+		}
 
-function calculateCube() {
-    let num = parseFloat(document.getElementById("cubeNum").value);
-    let cube = Math.pow(num, 3);
-    document.getElementById("output5").innerText = "Cube: " + cube;
-}
+		function calculateCube(){
+			let num = parseFloat(document.getElementById("cubeNum").value);
+			let cube = Math.pow(num, 3);
+			document.getElementById("output5").innerText = "Cube: " + cube;
+		}
 	</script>
 
 </body>
